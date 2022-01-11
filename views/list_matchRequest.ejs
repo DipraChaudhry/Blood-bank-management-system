@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>View Requests</title>
+  <link rel="stylesheet" href="css/listStyles.css">
+</head>
+
+<body>
+
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
+
+  <table cellspacing="20" style="margin-left: 20px;">
+    <thead>
+      <tr>
+        <th  style="font-size:x-large;">Name</th>
+        <th  style="font-size:x-large;">Email</th>
+        <th  style="font-size:x-large;">Number</th>
+        <th  style="font-size:x-large;">Blood Group</th>
+        <th  style="font-size:x-large;">State</th>
+        <th  style="font-size:x-large;">City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let i=0; i<newListItems.length; i++) { %>
+        <tr >
+          <td>
+            <p><%=  newListItems[i]._name  %></p>
+          </td>
+
+          <td>
+            <p><%=  newListItems[i]._email  %></p>
+          </td>
+
+          <td>
+            <p><%=  newListItems[i]._MobNum  %></p>
+          </td>
+
+          <td>
+            <p><%=  newListItems[i]._BloodGroup  %></p>
+          </td>
+
+          <td>
+            <p><%=  newListItems[i]._State  %></p>
+          </td>
+
+          <td>
+            <p><%=  newListItems[i]._City  %></p>
+          </td>
+
+          
+
+
+        </tr>
+        <% } %>
+    </tbody>
+    
+  </table>
+
+
+</body>
+
+</html>

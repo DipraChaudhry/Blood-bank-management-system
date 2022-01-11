@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Request</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/signup.css"> -->
+
+
+</head>
+<body style="background-color:#f6e6e4;">
+  
+
+<div class="container" style="background-color:#f6e6e4;  margin:0px 400px">
+  <h3 style="margin: 25px 0px 0px 160px"><strong>
+      Raise a request</strong>
+  </h3><br>
+  <div class="row">
+      <div class="col-lg-6">
+          <form action="/sendReq" method="POST">
+              <div class="mb-3">
+              <label for="Name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="Name" name="name" style="width: 200%;">
+            </div><br>
+
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="Email" name="email" style="width: 200%;">
+              </div><br>
+            
+            <div class="mb-3">
+              <label for="MobNum" class="form-label">Contact Number</label>
+              <input type="integer" class="form-control" id="MobNum" name="mobNum" style="width: 200%;">
+            </div><br>
+
+            <div class="mb-3">
+                <label for="BloodGroup" class="form-label">Blood Group</label><br>
+                <select "form-select" aria-label=".form-select" name="BloodGroup">
+                  <option selected>Select your blood group</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  
+                </select>
+                <!--<input type="text" class="form-control" id="BloodGroup">-->
+              </div><br>
+
+              <div class="mb-3">
+                <label for="State" class="form-label">State</label>
+                <input type="text" class="form-control" id="State" name="State" style="width: 200%;">
+              </div><br>
+              <div class="mb-3">
+                <label for="City" class="form-label">City</label>
+                <input type="text" class="form-control" id="City" name="City" style="width: 200%;">
+              </div><br>
+
+           
+            <button type="submit" class="btn btn-primary" style="margin: 0px 180px" >Create Request</button>
+          </form>
+                      
+      </div>
+  </div>
+  
+</div>
+
+    
+</body>
+</html>

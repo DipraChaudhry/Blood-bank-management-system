@@ -1,0 +1,77 @@
+body{
+    background-color:white ;
+}
+
+#title{
+    /*background-color: #ef8172; */
+    /*background-color:#d8e3e7; */
+    background-color: #ff9292;
+    padding : 2% 
+}
+
+#features{
+    padding: 7% 15%;
+    background-color: white;
+}
+.container-fluid{
+    padding: 0 ;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-left: 2%;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+   padding-left: 2%;
+}
+
+.navbar{
+    padding: 0 0 2rem;
+    
+}
+
+.nav-item{
+    padding: 0 15px ;
+}
+
+.nav-link{
+    font-size: 1.1rem;
+}
+.navbar-item{
+    padding-left: 0;
+    padding-right: 0;
+}
+.download-button{
+    margin: 5% 3% 5% 3%;
+}
+
+.features-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+.Bar-2{
+    padding: 0%;
+    margin: 0%;
+}
+
+.title-text-img{
+    padding-top: 5%;
+}
+
